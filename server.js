@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({limit:'10mb',extended:false}))
 
 const mongoose = require('mongoose')
 //mongoose.connect(process.env.DATABASE_URL,{
-mongoose.connect('mongodb://localhost/mybrary',{
+mongoose.connect('mongodb+srv://mybrary-main:mybrary-main@mybrary-main.qi4gd.mongodb.net/mybrary-main?retryWrites=true&w=majority',{
     useNewUrlParser:true,
     useUnifiedTopology:true
 })
